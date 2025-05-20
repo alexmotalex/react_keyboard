@@ -13,11 +13,11 @@ export class App extends React.Component<{}, State> {
     this.setState({ pressedKey: e.key });
   };
 
-  componentDidMount(): void {
+  componentDidMount() {
     document.addEventListener('keyup', this.handleKeyUp);
   }
 
-  componentWillUnmount(): void {
+  componentWillUnmount() {
     document.removeEventListener('keyup', this.handleKeyUp);
   }
 
